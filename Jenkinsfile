@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Heroku push') {
             steps {
-                echo "Updating heroku master branch..."
+                echo "Updating heroku..."
 				sh "git push heroku master"
             }
         }
