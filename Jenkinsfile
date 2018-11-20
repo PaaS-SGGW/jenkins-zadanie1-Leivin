@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Updating heroku...again."
 				bat "heroku git:remote -a leivin-jenkins"
-				bat "git push heroku master"
+				bat "git push heroku HEAD:master"
             }
         }
     }
